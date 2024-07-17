@@ -6,8 +6,13 @@
         "dest": "/artifacts/$1"
       },
       {
+        "src": "/api/(.*)",
+        "dest": "/server.js"
+      },
+      {
         "src": "/(.*)",
-        "dest": "server.js"
+        "dest": "/server.js"
       }
     ]
   }
+  
