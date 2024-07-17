@@ -10,7 +10,7 @@
   },
   "name": "backend",
   "version": "1.0.0",
-  "main": "hardhat.config.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha",
     "start": "nodemon server.js"
