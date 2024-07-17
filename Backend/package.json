@@ -13,7 +13,7 @@
   "main": "hardhat.config.js",
   "scripts": {
     "test": "mocha",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
