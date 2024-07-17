@@ -12,6 +12,5 @@
             "dest": "/artifacts/$1"
         }
     ],
-    "env": {},
-    "cleanUrls": true
+    "env": {}
 }
