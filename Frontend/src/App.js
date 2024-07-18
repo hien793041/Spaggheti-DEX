@@ -25,9 +25,9 @@ function App() {
   useEffect(() => {
     const fetchContractABI = async () => {
       try {
-        console.log("Fetching contract ABI...");
+        console.log("Fetching contract ABI..." + process.env.REACT_APP_API_URL);
         const response = await axios.get(
-          "http://localhost:5000/artifacts/spagghetiDex.json"
+          `${process.env.REACT_APP_API_URL}/artifacts/spagghetiDex.json`
         );
         console.log("Contract ABI fetched:", response.data.abi);
         setContractABI(response.data.abi);

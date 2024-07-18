@@ -6,7 +6,12 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
+app.use('/', (req, res) => {
+  res.send("hi")
+});
+
 app.use('/artifacts', express.static(path.join(__dirname, 'artifacts')));
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
